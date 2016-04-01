@@ -30,6 +30,41 @@
                    };
         }
 
+        [Given]
+        public void Given_a_live_cell_with_COUNT_live_neighbours(int count)
+        {
+            seed = new[]
+                   {
+                       new { Alive = true, Neighbours = count }
+                   };
+        }
+
+        [Given]
+        public void Given_a_live_cell_has_more_than_COUNT_live_neighbours(int count)
+        {
+            seed = new[]
+                   {
+                       new { Alive = true, Neighbours = ++count }
+                   };
+        }
+
+        [Given]
+        public void Given_a_dead_cell_has_exactly_COUNT_live_neighbours(int count)
+        {
+            seed = new[]
+                   {
+                       new { Alive = false, Neighbours = count }
+                   };
+        }
+
+        [Then]
+        public void Then_the_cell_should_be_alive()
+        {
+            var isAlive = (bool)nextGeneration.Single().Alive;
+            isAlive.ShouldBeTrue();
+        }
+
+
         [When]
         public void When_I_ask_for_the_next_generation_of_cells()
         {

@@ -1,4 +1,6 @@
-﻿namespace Thoughtology.GameOfLife.Web.Models
+﻿using System;
+
+namespace Thoughtology.GameOfLife.Web.Models
 {
     public class Cell
     {
@@ -15,6 +17,11 @@
         public void Kill()
         {
             Alive = false;
+        }
+
+        public void Revive()
+        {
+            Alive = true;
         }
     }
 }
