@@ -64,7 +64,6 @@
             isAlive.ShouldBeTrue();
         }
 
-
         [When]
         public void When_I_ask_for_the_next_generation_of_cells()
         {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Thoughtology.GameOfLife.Web.Models
+﻿namespace Thoughtology.GameOfLife.Web.Models
 {
     public class Cell
     {
