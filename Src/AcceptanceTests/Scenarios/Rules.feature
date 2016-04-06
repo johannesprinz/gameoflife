@@ -37,4 +37,3 @@ Scenario: Revived by reproduction
     Then I should get back a new generation
     And it should have the same number of cells
     And the cell should be alive
-

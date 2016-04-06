@@ -32,8 +32,8 @@ namespace Thoughtology.GameOfLife.AcceptanceTests.Scenarios
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Rules", "  In order to display the current state of the universe \n  As a Game of Life grid" +
-                    "\n  I want to obtain the next generation of cells", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Rules", "  In order to display the current state of the universe \r\n  As a Game of Life gri" +
+                    "d\r\n  I want to obtain the next generation of cells", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
